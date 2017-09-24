@@ -49,7 +49,7 @@ if [[ $? -eq 0 ]]; then
 	fi
 		else
 			echo "Grabbing the latest version of Lawnchair"
-			wget -q --show-progress -O $DOWN_PATH/Lawnchair.apk $url
+			wget -q -O $DOWN_PATH/Lawnchair.apk $url
 		fi
 else
 	echo "Looks like you aren't connected to the Internet"

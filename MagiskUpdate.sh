@@ -91,7 +91,7 @@ else
 			if [[ $FORCE_CHECK == 0 ]]; then
 			mv $APP_DIR/MagiskManager.apk $APP_DIR/MagiskManager.apk.bak
 			fi
-			wget -q --show-progress -O $APP_DIR/MagiskManager.apk $app_link 
+			wget -q -O $APP_DIR/MagiskManager.apk $app_link 
 			APP_DOWN_CHECK=$?
 
 			echo " "
@@ -100,7 +100,7 @@ else
 			if [[ $FORCE_CHECK == 0 ]]; then
 			mv $ZIP_DIR/Magisk.zip $ZIP_DIR/Magisk.zip.bak
 			fi
-			wget -q --show-progress -O $ZIP_DIR/Magisk.zip $zip_link
+			wget -q -O $ZIP_DIR/Magisk.zip $zip_link
 			ZIP_DOWN_CHECK=$?
 
 			if [ $APP_DOWN_CHECK == 0 ] && [ $ZIP_DOWN_CHECK == 0 ]; then
